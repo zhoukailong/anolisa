@@ -45,6 +45,8 @@ fn raw_cli_config_language_save_applies_to_current_session_help() {
     assert!(output.contains("当前会话语言: zh-CN。"), "{output}");
     assert!(output.contains("Slash 命令"), "{output}");
     assert!(output.contains("配置"), "{output}");
+    assert!(output.contains("│ 注册表"), "{output}");
+    assert!(output.contains("编写一次性 Agent 请求"), "{output}");
     assert!(!output.contains("Config saved"), "{output}");
     assert!(!output.contains("bash: /config"), "{output}");
     assert!(!output.contains("bash: /help"), "{output}");
